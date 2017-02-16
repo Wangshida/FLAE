@@ -53,7 +53,7 @@ for i=1:ll
     [q_QUEST,K,iter_QUEST(i),time_poly_QUEST(i),time_eig_QUEST(i)]=QUEST_shuster(Dr,Db,weights);
     time_QUEST(i)=time_poly_QUEST(i)+time_eig_QUEST(i);
     
-    [q_FLAE,W,iter_FLAE(i),time_poly_FLAE(i),time_eig_FLAE(i)]=FLAE(Dr,Db,weights);
+    [q_FLAE,W,iter_FLAE(i),time_poly_FLAE(i),time_eig_FLAE(i)]=FLAE_newton(Dr,Db,weights);
     time_FLAE(i)=time_poly_FLAE(i)+time_eig_FLAE(i);
     
     tic;
